@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Coleta de Preferências{% endblock %}
+
+{% block content %} 
+<div class="title">
+    <h1>Bem-vindo ao nosso sistema de recomendação de pratos!</h1>
+    <h1>Por favor, responda algumas perguntas para obtermos suas preferências.</h1>
+</div>
+    <div class="questions">
+        <div class="input-group-prepend">
+          <span class="list" id="basic-addon1">
+            Qual categoria de prato você prefere?
+            <p>
+                (sobremesas | massas | carnes)
+            </p>
+        </span>
+        </div>
+        <input type="text" class="form-control" placeholder="Categoria" aria-label="Categoria" aria-describedby="basic-addon1">
+      </div>
+      <div class="questions">
+        <div class="input-group-prepend">
+          <span class="list" id="basic-addon1">
+            Qual ingrediente você gosta?
+        </span>
+        </div>
+        <input type="text" class="form-control" placeholder="Ingrediente" aria-label="Ingrediente" aria-describedby="basic-addon1">
+      </div>
+{% endblock %}
